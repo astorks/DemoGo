@@ -2,17 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WebSocketSharp.Server;
 
-namespace DemoInfoWs
+namespace DemoGo.Parser
 {
     public class Program
     {
-        public static HttpServer HttpServer { get; private set; }
-
         public static void Main(string[] args)
         {
-            HttpServer = new HttpServer(8086);
+            Console.WriteLine("Hello From DNX");
         }
     }
 }
