@@ -1,0 +1,25 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "DemoInfoWs Console Application",
+  "authors": [ "Ashton" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+
+  "compilationOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "WebSocketSharp": "1.0.3-rc10",
+    "DemoInfo": "1.0.0"
+  },
+
+  "commands": {
+    "DemoInfoWs": "DemoInfoWs"
+  },
+
+  "frameworks": {
+    "dnx451": { }
+  }
+}
