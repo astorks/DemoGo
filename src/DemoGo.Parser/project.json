@@ -9,7 +9,7 @@
   "configurations": {
     "release": {
       "compilationOptions": {
-        "define": [ "DEBUG" ],
+        "define": [ "RELEASE" ],
         "optimize": true,
         "warningsAsErrors": true
       }
