@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace DemoGo.Parser
@@ -12,6 +13,7 @@ namespace DemoGo.Parser
 
         public static void Main(string[] args)
         {
+            var start = DateTime.UtcNow;
             DemoInfo.DemoParser parser = new DemoInfo.DemoParser(File.OpenRead("./fuck.dem"));
             parser.PlayerKilled += Parser_PlayerKilled;
             parser.PlayerBind += Parser_PlayerBind;
@@ -19,23 +21,27 @@ namespace DemoGo.Parser
             parser.ParseHeader();
             Console.WriteLine("{0}, {1}", parser.TickRate, parser.Header);
             parser.ParseToEnd();
+            var end = DateTime.UtcNow;
+
+            Console.WriteLine("Finished in {0}", end - start);
+
             Console.ReadLine();
         }
 
         private static void Parser_RoundStart(object sender, DemoInfo.RoundStartedEventArgs e)
         {
             roundNumber++;
-            Console.WriteLine("Round {0} started", roundNumber);
+            //Console.WriteLine("Round {0} started", roundNumber);
         }
 
         private static void Parser_PlayerBind(object sender, DemoInfo.PlayerBindEventArgs e)
         {
-            Console.WriteLine("{0} connected", e.Player.Name);
+            //Console.WriteLine("{0} connected", e.Player.Name);
         }
 
         private static void Parser_PlayerKilled(object sender, DemoInfo.PlayerKilledEventArgs e)
         {
-            Console.WriteLine("{0} killed {1} with {2}", e.Killer?.Name ?? "Bot", e.Victim?.Name ?? "Bot", e.Weapon?.Weapon);
+            //Console.WriteLine("{0} killed {1} with {2}", e.Killer?.Name ?? "Bot", e.Victim?.Name ?? "Bot", e.Weapon?.Weapon);
         }
     }
 }
