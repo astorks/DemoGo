@@ -6,12 +6,20 @@
   "projectUrl": "",
   "licenseUrl": "",
 
-  "compilationOptions": {
-    "emitEntryPoint": true
+  "configurations": {
+    "release": {
+      "compilationOptions": {
+        "define": [ "DEBUG" ],
+        "optimize": true,
+        "warningsAsErrors": true
+      }
+    }
   },
 
-  "dependencies": {
-    "DemoInfo": "1.0.0"
+  "compilationOptions": {
+    "emitEntryPoint": true,
+    "allowUnsafe": true
+    
   },
 
   "commands": {

@@ -12,8 +12,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DemoGo.Parser", "src\DemoGo.Parser\DemoGo.Parser.xproj", "{CD40EBF6-09C7-47A9-ABDD-6FCD03F68CD5}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "DemoInfo", "src\DemoInfo\DemoInfo.xproj", "{F7225FDF-D0BF-45F5-8077-1E79E4EC2805}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,16 +22,11 @@ Global
 		{CD40EBF6-09C7-47A9-ABDD-6FCD03F68CD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD40EBF6-09C7-47A9-ABDD-6FCD03F68CD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD40EBF6-09C7-47A9-ABDD-6FCD03F68CD5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F7225FDF-D0BF-45F5-8077-1E79E4EC2805}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7225FDF-D0BF-45F5-8077-1E79E4EC2805}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7225FDF-D0BF-45F5-8077-1E79E4EC2805}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7225FDF-D0BF-45F5-8077-1E79E4EC2805}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CD40EBF6-09C7-47A9-ABDD-6FCD03F68CD5} = {B2036425-072A-48DA-819E-ADC0E955F11E}
-		{F7225FDF-D0BF-45F5-8077-1E79E4EC2805} = {B2036425-072A-48DA-819E-ADC0E955F11E}
 	EndGlobalSection
 EndGlobal
