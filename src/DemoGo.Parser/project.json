@@ -1,5 +1,9 @@
 ﻿{
   "version": "1.0.0-*",
+  "webroot": "wwwroot",
+  "exclude": [
+    "wwwroot"
+  ],
   "description": "DemoGo.Parser Console Application",
   "authors": [ "Ashton" ],
   "tags": [ "" ],
@@ -14,12 +18,8 @@
       }
     }
   },
-  "compilationOptions": {
-    "emitEntryPoint": true,
-    "allowUnsafe": true
-  },
   "commands": {
-    "DemoGo.Parser": "DemoGo.Parser"
+    "startup": "Microsoft.AspNet.Server.Kestrel --server.urls http://*:5000"
   },
   "frameworks": {
     "dnxcore50": {
@@ -35,6 +35,12 @@
     }
   },
   "dependencies": {
-    "System.Threading.Timer": "4.0.1-beta-23516"
+    "mysql-dnxcore50": "7.0.0-alpha",
+    "DemoInfo": "1.4.0-alpha1",
+    "Microsoft.AspNet.Http.Abstractions": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Hosting": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Diagnostics": "1.0.0-rc1-final",
+    "Newtonsoft.Json": "7.0.1"
   }
 }
