@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 
 namespace DemoGo.Parser
@@ -27,13 +28,27 @@ namespace DemoGo.Parser
 
         public Parser(Services.DemoService.DemoQueue demoQueue) : this(demoQueue.DemoId)
         {
-            DemoParser = new DemoInfo.DemoParser(File.OpenRead(demoQueue.DemoFile));
+            using (var httpClient = new HttpClient())
+            {
+                var task = httpClient.GetStreamAsync(demoQueue.DemoUrl);
+                task.Wait();
+                var demoStream = task.Result;
+                DemoParser = new DemoInfo.DemoParser(demoStream);
+            }
+
             SetupEvents();
         }
 
-        public Parser(Guid demoId, string demoPath) : this(demoId)
+        public Parser(Guid demoId, string demoUrl) : this(demoId)
         {
-            DemoParser = new DemoInfo.DemoParser(File.OpenRead(demoPath));
+            using (var httpClient = new HttpClient())
+            {
+                var task = httpClient.GetStreamAsync(demoUrl);
+                task.Wait();
+                var demoStream = task.Result;
+                DemoParser = new DemoInfo.DemoParser(demoStream);
+            }
+
             SetupEvents();
         }
 

@@ -10,44 +10,74 @@ namespace DemoGo.Controllers
     public class MainController : Controller
     {
         private Services.DemoService DemoService { get; }
+        private Services.ApiAuthenticationService AuthService { get; }
 
-        public MainController(Services.DemoService demoService)
+        public MainController(Services.DemoService demoService, Services.ApiAuthenticationService authService)
         {
             DemoService = demoService;
+            AuthService = authService;
         }
 
-        [HttpGet("force-parse")]
-        public ActionResult ForceParse(string demoFile)
+        public ActionResult Index()
         {
-            var demoParser = new Parser.Parser(Guid.NewGuid(), demoFile);
-            demoParser.Parse();
-            return Json(new { demoParser.Demo }, new Newtonsoft.Json.JsonSerializerSettings { ContractResolver = new Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver() });
+            return Json(new { AuthService.CurrentlyAuthenticated?.Name });
+        }
+
+        [HttpGet("apitoken/list")]
+        public ActionResult ListTokens()
+        {
+            return Json(AuthService.ApiAuthenticationList);
+        }
+
+
+        [HttpGet("apitoken/new")]
+        public ActionResult NewToken(string name, string permissions = "schedule,parse")
+        {
+            if (AuthService.CurrentlyAuthenticated?.HasPermission("management.newtoken") == true)
+            {
+                var auth = AuthService.New(name, permissions);
+                return Json(auth);
+            }
+
+            return Json(new { success = false, message = "Invalid api token" });
+        }
+
+        [HttpGet("parse")]
+        public ActionResult ForceParse(string demoUrl)
+        {
+            if (AuthService.CurrentlyAuthenticated?.HasPermission("parse") == true)
+            {
+                var demoParser = new Parser.Parser(Guid.NewGuid(), demoUrl);
+                demoParser.Parse();
+                return Json(new { demoParser.Demo }, new Newtonsoft.Json.JsonSerializerSettings { ContractResolver = new Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver() });
+            }
+
+            return Json(new { success = false, message = "Invalid api token" });
         }
 
         [HttpGet("schedule")]
-        public ActionResult ScheduleDemoParse(string apiKey, string demoFile, string callbackUrl = null)
+        public ActionResult ScheduleDemoParse(string demoUrl, string callbackUrl = null)
         {
-            //if (apiKey != "cupcake")
-            //    return HttpBadRequest();
+            if (AuthService.CurrentlyAuthenticated?.HasPermission("schedule") == true)
+            {
+                var demoId = DemoService.ScheduleDemoParse(demoUrl, callbackUrl);
+                return Json(new { success = true, demoId, callbackUrl });
+            }
 
-            var demoId = DemoService.ScheduleDemoParse(demoFile, callbackUrl);
-            return Json(new { demoId, callbackUrl });
+            return Json(new { success = false, message = "Invalid api token" });
         }
 
         [HttpGet("request")]
         public ActionResult RequestDemo(string apiKey, Guid demoId)
         {
-            //if (apiKey != "cupcake")
-            //    return HttpBadRequest();
-
             var demo = DemoService.RequestDemo(demoId);
             return Json(new { demo });
         }
 
         [HttpPost("test")]
-        public ActionResult TestCallback()
+        public ActionResult TestCallback([FromBody]dynamic model)
         {
-            return Json(new { success = true });
+            return Json(model);
         }
     }
 }

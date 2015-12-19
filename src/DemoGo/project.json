@@ -16,11 +16,12 @@
     "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
     "DemoInfo": "1.4.0-alpha1",
     "Microsoft.Extensions.OptionsModel": "1.0.0-rc1-final",
-    "System.Net.Http": "4.0.1-beta-23516"
+    "System.Net.Http": "4.0.1-beta-23516",
+    "Microsoft.AspNet.Diagnostics": "1.0.0-rc1-final"
   },
 
   "commands": {
-    "web": "Microsoft.AspNet.Server.Kestrel"
+    "web": "Microsoft.AspNet.Server.Kestrel --webroot \"wwwroot\""
   },
 
   "frameworks": {
