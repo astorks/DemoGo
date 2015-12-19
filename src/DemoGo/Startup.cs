@@ -45,9 +45,9 @@ namespace DemoGo
             loggerFactory.AddDebug();
             loggerFactory.AddProvider(new Logging.FileLoggerProvider());
 
-            app.UseDeveloperExceptionPage();
+            //app.UseDeveloperExceptionPage();
 
-            app.UseIISPlatformHandler();
+            //app.UseIISPlatformHandler();
 
             app.UseMvc();
 
