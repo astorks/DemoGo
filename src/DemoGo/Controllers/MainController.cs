@@ -18,7 +18,7 @@ namespace DemoGo.Controllers
 
         public ActionResult Index()
         {
-            return Json(new { apiVersion = Startup.Configuration["version"] });
+            return Json(new { server = Environment.MachineName, apiVersion = Startup.Configuration["version"] });
         }
 
         [HttpGet("ondemand")]
