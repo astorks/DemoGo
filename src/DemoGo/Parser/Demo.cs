@@ -16,6 +16,7 @@ namespace DemoGo.Parser
         }
 
         public Guid Id { get; }
+        public float ParsingProgress { get; set; }
         public string Map { get; set; }
         public string Host { get; set; }
         public byte Tickrate { get; set; }

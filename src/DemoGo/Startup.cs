@@ -16,18 +16,18 @@ namespace DemoGo
     public class Startup
     {
         public static string WebRootPath { get; private set; }
+        public static IConfigurationRoot Configuration { get; private set; }
 
         public Startup(IHostingEnvironment env)
         {
             WebRootPath = env.WebRootPath;
             // Set up configuration sources.
             var builder = new ConfigurationBuilder()
+                .AddJsonFile("project.json")
                 .AddJsonFile("appsettings.json")
                 .AddEnvironmentVariables();
             Configuration = builder.Build();
         }
-
-        public IConfigurationRoot Configuration { get; set; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)

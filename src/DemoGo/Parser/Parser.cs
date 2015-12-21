@@ -71,6 +71,7 @@ namespace DemoGo.Parser
             DemoParser.ServerRankUpdate += DemoParser_ServerRankUpdate;
             DemoParser.BombPlanted += DemoParser_BombPlanted;
             DemoParser.BombDefused += DemoParser_BombDefused;
+            DemoParser.TickDone += DemoParser_TickDone;
         }
 
         #region Event Handlers
@@ -212,6 +213,11 @@ namespace DemoGo.Parser
                 DefuserSteamId = e.Player?.SteamID,
                 Site = e.Site
             });
+        }
+
+        private void DemoParser_TickDone(object sender, DemoInfo.TickDoneEventArgs e)
+        {
+            Demo.ParsingProgress = Demo.ParsingProgress > 1 ? 1f : Demo.ParsingProgress;
         }
         #endregion
 

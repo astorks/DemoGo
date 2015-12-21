@@ -12,7 +12,7 @@ namespace DemoGo.Services
     public class DemoService
     {
         private bool Started { get; set; }
-        private List<Parser.Demo> ParsedDemos { get; } = new List<Parser.Demo>();
+        private List<Parser.Demo> Demos { get; } = new List<Parser.Demo>();
         private Queue<DemoQueue> QueuedDemos { get; } = new Queue<DemoQueue>();
         private List<Thread> DemoParserThreads { get; } = new List<Thread>();
         private List<int> DemoParserThreadsShutdown { get; } = new List<int>();
@@ -81,14 +81,13 @@ namespace DemoGo.Services
                     try
                     {
                         var demoParser = new Parser.Parser(demoQueue);
+                        Demos.Add(demoParser.Demo);
                         Logger.LogInformation("Thread {0} starting demo parsing for demo {1}", Thread.CurrentThread.ManagedThreadId, demoParser.DemoId);
                         demoParser.Parse();
                         Logger.LogInformation("Thread {0} finished demo parsing for demo {1}", Thread.CurrentThread.ManagedThreadId, demoParser.DemoId);
 
                         if (demoQueue.CallbackUrl != null)
                             await PostCallback(demoQueue.CallbackUrl, new CallbackModel { Success = true, DemoId = demoQueue.DemoId, Demo = demoParser.Demo });
-                        else
-                            ParsedDemos.Add(demoParser.Demo);
                     }
                     catch(Exception e)
                     {
@@ -103,9 +102,9 @@ namespace DemoGo.Services
 
         public Parser.Demo RequestDemo(Guid demoId)
         {
-            var demo = ParsedDemos.Where(e => e.Id == demoId).FirstOrDefault();
+            var demo = Demos.Where(e => e.Id == demoId).FirstOrDefault();
             if (demo != null)
-                ParsedDemos.Remove(demo);
+                Demos.Remove(demo);
             return demo;
         }
 

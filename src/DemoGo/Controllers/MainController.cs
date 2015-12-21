@@ -18,36 +18,36 @@ namespace DemoGo.Controllers
 
         public ActionResult Index()
         {
-            return Json(new { });
+            return Json(new { apiVersion = Startup.Configuration["version"] });
         }
 
-        [HttpGet("parse")]
-        public ActionResult ForceParse(string demoUrl)
+        [HttpGet("ondemand")]
+        public ActionResult ParseDemo(string demoUrl)
         {
             var demoParser = new Parser.Parser(Guid.NewGuid(), demoUrl);
             demoParser.Parse();
             return Json(new { demoParser.Demo }, new Newtonsoft.Json.JsonSerializerSettings { ContractResolver = new Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver() });
-
         }
 
         [HttpGet("schedule")]
-        public ActionResult ScheduleDemoParse(string demoUrl, string callbackUrl = null)
+        public ActionResult ScheduleDemo(string demoUrl, string callbackUrl = null)
         {
             var demoId = DemoService.ScheduleDemoParse(demoUrl, callbackUrl);
             return Json(new { success = true, demoId, callbackUrl });
         }
 
-        [HttpGet("request")]
-        public ActionResult RequestDemo(string apiKey, Guid demoId)
+        [HttpGet("demo/{demoId}")]
+        public ActionResult GetDemo(Guid demoId)
         {
             var demo = DemoService.RequestDemo(demoId);
             return Json(new { demo });
         }
 
-        [HttpPost("test")]
-        public ActionResult TestCallback([FromBody]dynamic model)
+        [HttpGet("demo/{demoId}/progress")]
+        public ActionResult GetDemoProgress(Guid demoId)
         {
-            return Json(model);
+            var demo = DemoService.RequestDemo(demoId);
+            return Json(new { progress = demo?.ParsingProgress * 100f });
         }
     }
 }
