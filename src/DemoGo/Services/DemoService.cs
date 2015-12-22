@@ -100,11 +100,17 @@ namespace DemoGo.Services
             DemoParserThreadsShutdown.Remove(Thread.CurrentThread.ManagedThreadId);
         }
 
+        public int SchedulePosition(Guid demoId)
+        {
+            if (QueuedDemos.Where(e => e.DemoId == demoId).Any())
+                return QueuedDemos.ToList().IndexOf(QueuedDemos.Where(e => e.DemoId == demoId).FirstOrDefault());
+
+            return -1;
+        }
+
         public Parser.Demo RequestDemo(Guid demoId)
         {
             var demo = Demos.Where(e => e.Id == demoId).FirstOrDefault();
-            if (demo != null)
-                Demos.Remove(demo);
             return demo;
         }
 

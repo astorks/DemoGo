@@ -47,7 +47,8 @@ namespace DemoGo.Controllers
         public ActionResult GetDemoProgress(Guid demoId)
         {
             var demo = DemoService.RequestDemo(demoId);
-            return Json(new { progress = demo?.ParsingProgress * 100f });
+            var schedulerPosition = DemoService.SchedulePosition(demoId);
+            return Json(new { schedulerPosition, progress = demo?.ParsingProgress * 100f });
         }
     }
 }

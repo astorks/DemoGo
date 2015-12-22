@@ -217,7 +217,7 @@ namespace DemoGo.Parser
 
         private void DemoParser_TickDone(object sender, DemoInfo.TickDoneEventArgs e)
         {
-            Demo.ParsingProgress = Demo.ParsingProgress > 1 ? 1f : Demo.ParsingProgress;
+            Demo.ParsingProgress = DemoParser.ParsingProgess > 1 ? 1f : DemoParser.ParsingProgess;
         }
         #endregion
 
