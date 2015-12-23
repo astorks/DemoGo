@@ -91,7 +91,40 @@ namespace DemoGo.Parser
             public int Number { get; set; }
             public string WinState { get; set; }
             public Team WinningSide { get; set; }
+            public int TimeLimit { get; set; }
             public int Half { get; set; }
+
+            public int Team1StartMoney
+            {
+                get
+                {
+                    return Players.Where(e => Demo.Team1Players.Contains(e.SteamId)).Sum(e => e.StartMoney);
+                }
+            }
+
+            public int Team1EquipmentValue
+            {
+                get
+                {
+                    return Players.Where(e => Demo.Team1Players.Contains(e.SteamId)).Sum(e => e.EquipmentValue);
+                }
+            }
+
+            public int Team2StartMoney
+            {
+                get
+                {
+                    return Players.Where(e => Demo.Team2Players.Contains(e.SteamId)).Sum(e => e.StartMoney);
+                }
+            }
+
+            public int Team2EquipmentValue
+            {
+                get
+                {
+                    return Players.Where(e => Demo.Team2Players.Contains(e.SteamId)).Sum(e => e.EquipmentValue);
+                }
+            }
 
             public IEnumerable<RoundPlayer> Players
             {
@@ -155,6 +188,20 @@ namespace DemoGo.Parser
             public long SteamId { get; set; }
             [JsonIgnore]
             public int RoundNumber { get; set; }
+            public int EquipmentValue
+            {
+                get
+                {
+                    return Demo.Players.Where(e => e.SteamId == SteamId).FirstOrDefault().EquipmentValuesByRound[RoundNumber];
+                }
+            }
+            public int StartMoney
+            {
+                get
+                {
+                    return Demo.Players.Where(e => e.SteamId == SteamId).FirstOrDefault().StartMoneyByRound[RoundNumber];
+                }
+            }
             public bool PlantedBomb
             {
                 get
@@ -237,6 +284,11 @@ namespace DemoGo.Parser
 
             [JsonIgnore]
             public Demo Demo { get; set; }
+
+            [JsonIgnore]
+            public Dictionary<int, int> EquipmentValuesByRound { get; } = new Dictionary<int, int>();
+            [JsonIgnore]
+            public Dictionary<int, int> StartMoneyByRound { get; } = new Dictionary<int, int>();
 
             public long SteamId { get; set; }
             public string Name { get; set; }

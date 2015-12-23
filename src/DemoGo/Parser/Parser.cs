@@ -19,6 +19,8 @@ namespace DemoGo.Parser
         private bool PossibleClutch { get; set; }
         public bool LastRoundOfHalf { get; set; }
         private int CurrentHalf { get; set; } = 1;
+        private bool RoundMoneyFlag { get; set; }
+        private bool RoundEqupmentFlag { get; set; }
 
         private Parser(Guid demoId)
         {
@@ -64,6 +66,7 @@ namespace DemoGo.Parser
             DemoParser.PlayerTeam += DemoParser_PlayerTeam;
             DemoParser.MatchStarted += DemoParser_MatchStarted;
             DemoParser.RoundStart += DemoParser_RoundStart;
+            DemoParser.FreezetimeEnded += DemoParser_FreezetimeEnded;
             DemoParser.LastRoundHalf += DemoParser_LastRoundHalf;
             DemoParser.RoundEnd += DemoParser_RoundEnd;
             DemoParser.PlayerHurt += DemoParser_PlayerHurt;
@@ -118,8 +121,22 @@ namespace DemoGo.Parser
                 Demo = Demo,
                 Number = CurrentRound,
                 StartTick = DemoParser.IngameTick,
+                TimeLimit = e.TimeLimit,
                 Half = CurrentHalf
             });
+
+            RoundMoneyFlag = true;
+        }
+
+        private void DemoParser_FreezetimeEnded(object sender, DemoInfo.FreezetimeEndedEventArgs e)
+        {
+            RoundEqupmentFlag = true;
+            //foreach (var p1 in DemoParser.PlayingParticipants)
+            //{
+            //    var player = Demo.Players.Where(p => p.SteamId == p1.SteamID).FirstOrDefault();
+            //    if (player != null)
+            //        player.EquipmentValuesByRound.Add(CurrentRound, p1.CurrentEquipmentValue);
+            //}
         }
 
         private void DemoParser_LastRoundHalf(object sender, DemoInfo.LastRoundHalfEventArgs e)
@@ -218,6 +235,30 @@ namespace DemoGo.Parser
         private void DemoParser_TickDone(object sender, DemoInfo.TickDoneEventArgs e)
         {
             Demo.ParsingProgress = DemoParser.ParsingProgess > 1 ? 1f : DemoParser.ParsingProgess;
+
+            if (RoundMoneyFlag)
+            {
+                RoundMoneyFlag = false;
+
+                foreach (var p1 in DemoParser.PlayingParticipants)
+                {
+                    var player = Demo.Players.Where(p => p.SteamId == p1.SteamID).FirstOrDefault();
+                    if (player != null)
+                        player.StartMoneyByRound.Add(CurrentRound, p1.Money);
+                }
+            }
+
+            if (RoundEqupmentFlag)
+            {
+                RoundEqupmentFlag = false;
+
+                foreach (var p1 in DemoParser.PlayingParticipants)
+                {
+                    var player = Demo.Players.Where(p => p.SteamId == p1.SteamID).FirstOrDefault();
+                    if (player != null)
+                        player.EquipmentValuesByRound[CurrentRound] = p1.FreezetimeEndEquipmentValue;
+                }
+            }
         }
         #endregion
 
