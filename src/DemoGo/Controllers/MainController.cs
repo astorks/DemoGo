@@ -26,7 +26,7 @@ namespace DemoGo.Controllers
         {
             var demoParser = new Parser.Parser(Guid.NewGuid(), demoUrl);
             demoParser.Parse();
-            return Json(new { demoParser.Demo }, new Newtonsoft.Json.JsonSerializerSettings { ContractResolver = new Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver() });
+            return Json(new { success = true, demoParser.Demo }, new Newtonsoft.Json.JsonSerializerSettings { ContractResolver = new Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver() });
         }
 
         [HttpGet("schedule")]
