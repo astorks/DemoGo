@@ -192,14 +192,16 @@ namespace DemoGo.Parser
             {
                 get
                 {
-                    return Demo.Players.Where(e => e.SteamId == SteamId).FirstOrDefault().EquipmentValuesByRound[RoundNumber];
+                    var demoPlayer = Demo.Players.Where(e => e.SteamId == SteamId).FirstOrDefault();
+                    return demoPlayer.EquipmentValuesByRound.ContainsKey(RoundNumber) ? demoPlayer.EquipmentValuesByRound[RoundNumber] : 0;
                 }
             }
             public int StartMoney
             {
                 get
                 {
-                    return Demo.Players.Where(e => e.SteamId == SteamId).FirstOrDefault().StartMoneyByRound[RoundNumber];
+                    var demoPlayer = Demo.Players.Where(e => e.SteamId == SteamId).FirstOrDefault();
+                    return demoPlayer.StartMoneyByRound.ContainsKey(RoundNumber) ? demoPlayer.StartMoneyByRound[RoundNumber] : 0;
                 }
             }
             public bool PlantedBomb

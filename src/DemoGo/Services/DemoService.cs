@@ -74,6 +74,7 @@ namespace DemoGo.Services
 
                 if (QueuedDemos.Count == 0)
                     Thread.Sleep(100);
+
                 else
                 {
                     var demoQueue = QueuedDemos.Dequeue();
