@@ -17,6 +17,7 @@ namespace DemoGo.Parser
         private int CurrentRound { get; set; }
         private bool CurrentRoundInProgress { get; set; }
         private long? PossibleClutcher { get; set; }
+        private int PossibleClutchVs { get; set; }
         private List<long> Team1LivingPlayers { get; } = new List<long>();
         private List<long> Team2LivingPlayers { get; } = new List<long>();
         public bool LastRoundOfHalf { get; set; }
@@ -82,6 +83,8 @@ namespace DemoGo.Parser
         #region Event Handlers
         private void DemoParser_PlayerBind(object sender, DemoInfo.PlayerBindEventArgs e)
         {
+            if (MatchStarted) return;
+
             if (e.Player?.Team == DemoInfo.Team.CounterTerrorist)
                 Demo.Team1Players.Add(e.Player.SteamID);
             else if (e.Player?.Team == DemoInfo.Team.Terrorist)
@@ -121,6 +124,12 @@ namespace DemoGo.Parser
             else
                 CurrentRound++;
 
+            Team1LivingPlayers.Clear();
+            Team2LivingPlayers.Clear();
+            Team1LivingPlayers.AddRange(Demo.Team1Players);
+            Team2LivingPlayers.AddRange(Demo.Team2Players);
+            PossibleClutcher = null;
+
             CurrentRoundInProgress = true;
             Demo.RoundLogs.Add(new Demo.RoundLog
             {
@@ -148,7 +157,20 @@ namespace DemoGo.Parser
         {
             CurrentRoundInProgress = false;
 
-            if(LastRoundOfHalf)
+            if (PossibleClutcher != null)
+            {
+                var clutcherSide = Demo.Team2Players.Contains(PossibleClutcher.Value) && (CurrentHalf % 2 != 0) ? DemoInfo.Team.Terrorist : DemoInfo.Team.CounterTerrorist;
+                if (e.Winner == clutcherSide)
+                    Demo.NotableEvents.Add(new Demo.NotableEvent
+                    {
+                        Type = Demo.NotableEventType.Clutch,
+                        SteamId = PossibleClutcher.Value,
+                        RoundNumber = CurrentRound,
+                        AdditionalData = new { Vs = PossibleClutchVs }
+                    });
+            }
+
+            if (LastRoundOfHalf)
             {
                 LastRoundOfHalf = false;
                 CurrentHalf++;
@@ -183,6 +205,26 @@ namespace DemoGo.Parser
         private void DemoParser_PlayerKilled(object sender, DemoInfo.PlayerKilledEventArgs e)
         {
             if (!MatchStarted) return;
+
+            Team1LivingPlayers.Remove(e.Victim.SteamID);
+            Team2LivingPlayers.Remove(e.Victim.SteamID);
+
+            // Clutch shit
+            if (PossibleClutcher == null)
+            {
+                if (Team1LivingPlayers.Count == 1 && Team2LivingPlayers.Count >= 3)
+                {
+                    PossibleClutcher = Team1LivingPlayers.FirstOrDefault();
+                    PossibleClutchVs = Team2LivingPlayers.Count;
+                }
+                if (Team2LivingPlayers.Count == 1 && Team1LivingPlayers.Count >= 3)
+                {
+                    PossibleClutcher = Team2LivingPlayers.FirstOrDefault();
+                    PossibleClutchVs = Team1LivingPlayers.Count;
+                }
+            }
+            else if (e.Victim.SteamID == PossibleClutcher)
+                PossibleClutcher = null;
 
             Demo.EventLogs.Add(new Demo.EventPlayerKill
             {

@@ -1,0 +1,920 @@
+Information: Created MasterKey: {"Name":"MasterKey","Key":"HD8ShxslIxWR0pyHJrijyS+bIAmdKHbLhmI9LwRg4r4=","Permissions":["*"]}
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Error: An unhandled exception has occurred while executing the request
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Information: Request finished in 0.0516ms 500 text/html; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Error: An unhandled exception has occurred while executing the request
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Information: Request finished in 0.0016ms 500 text/html; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Error: An unhandled exception has occurred while executing the request
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Information: Request finished in 0ms 500 text/html; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Error: An unhandled exception has occurred while executing the request
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Information: Request finished in 0.0015ms 500 text/html; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Error: An unhandled exception has occurred while executing the request
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Information: Request finished in 0ms 500 text/html; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Error: An unhandled exception has occurred while executing the request
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Information: Request finished in 0.0016ms 500 text/html; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Error: An unhandled exception has occurred while executing the request
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Information: Request finished in 0.0016ms 500 text/html; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Error: An unhandled exception has occurred while executing the request
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Information: Request finished in 0.039ms 500 text/html; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Error: An unhandled exception has occurred while executing the request
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Information: Request finished in 0.0015ms 500 text/html; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Error: An unhandled exception has occurred while executing the request
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Information: Request finished in 0ms 500 text/html; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Error: An unhandled exception has occurred while executing the request
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Information: Request finished in 0.0016ms 500 text/html; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Error: An unhandled exception has occurred while executing the request
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Information: Request finished in 0.0016ms 500 text/html; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Error: An unhandled exception has occurred while executing the request
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Information: Request finished in 0ms 500 text/html; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Error: An unhandled exception has occurred while executing the request
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Information: Request finished in 0ms 500 text/html; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Error: An unhandled exception has occurred while executing the request
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.IISPlatformHandler.IISPlatformHandlerMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Diagnostics.DeveloperExceptionPageMiddleware.<Invoke>d__7.MoveNext()
+Information: Request finished in 0ms 500 text/html; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Information: Request finished in 0.0234ms 500
+Error: An unhandled exception was thrown by the application.
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Hosting.Internal.HostingEngine.<>c__DisplayClass32_0.<<Start>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Server.Kestrel.Http.Frame.<RequestProcessingAsync>d__79.MoveNext()
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Information: Request finished in 0ms 500
+Error: An unhandled exception was thrown by the application.
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Hosting.Internal.HostingEngine.<>c__DisplayClass32_0.<<Start>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Server.Kestrel.Http.Frame.<RequestProcessingAsync>d__79.MoveNext()
+Information: Request starting HTTP/1.1 GET http://localhost:5000/  
+Information: Request finished in 0ms 500
+Error: An unhandled exception was thrown by the application.
+System.Reflection.ReflectionTypeLoadException: Unable to load one or more of the requested types. Retrieve the LoaderExceptions property for more information.
+   at System.Reflection.RuntimeModule.GetTypes(RuntimeModule module)
+   at System.Reflection.RuntimeAssembly.get_DefinedTypes()
+   at Microsoft.AspNet.Mvc.Controllers.DefaultControllerTypeProvider.<>c.<get_ControllerTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.<SelectManyIterator>d__1`2.MoveNext()
+   at System.Linq.Enumerable.WhereEnumerableIterator`1.MoveNext()
+   at Microsoft.AspNet.Mvc.ApplicationModels.DefaultApplicationModelProvider.OnProvidersExecuting(ApplicationModelProviderContext context)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.BuildModel()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.GetDescriptors()
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionDescriptorProvider.OnProvidersExecuting(ActionDescriptorProviderContext context)
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.GetCollection()
+   at Microsoft.AspNet.Mvc.Infrastructure.DefaultActionDescriptorsCollectionProvider.get_ActionDescriptors()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.GetInnerRoute()
+   at Microsoft.AspNet.Mvc.Routing.AttributeRoute.RouteAsync(RouteContext context)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Hosting.Internal.HostingEngine.<>c__DisplayClass32_0.<<Start>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Server.Kestrel.Http.Frame.<RequestProcessingAsync>d__79.MoveNext()
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/  
+Information: Executing action method DemoGo.Controllers.MainController.Index with arguments () - ModelState is Valid'
+Information: Executing JsonResult, writing value { apiVersion = 1.0.0-preview1 }.
+Information: Executed action DemoGo.Controllers.MainController.Index in 0.0125ms
+Information: Request finished in 0.0797ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/  
+Information: Executing action method DemoGo.Controllers.MainController.Index with arguments () - ModelState is Valid'
+Information: Executing JsonResult, writing value { server = ASHTON-PC, apiVersion = 1.0.0-preview1 }.
+Information: Executed action DemoGo.Controllers.MainController.Index in 0.0109ms
+Information: Request finished in 0.0265ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 5.1297ms
+Information: Request finished in 5.1734ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Request finished in 4.9485ms 500
+Error: An unhandled exception was thrown by the application.
+System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at DemoGo.Parser.Parser.DemoParser_FreezetimeEnded(Object sender, FreezetimeEndedEventArgs e) in C:\Users\Ashton\Desktop\demogo\src\DemoGo\Parser\Parser.cs:line 139
+   at DemoInfo.DemoParser.RaiseFreezetimeEnded() in C:\Users\Ashton\Desktop\demogo\src\DemoInfo\DemoParser.cs:line 1204
+   at DemoInfo.DP.Handler.GameEventHandler.Apply(GameEvent rawEvent, DemoParser parser) in C:\Users\Ashton\Desktop\demogo\src\DemoInfo\DP\Handler\GameEventHandler.cs:line 113
+   at DemoInfo.GameEvent.Parse(IBitStream bitstream, DemoParser parser) in C:\Users\Ashton\Desktop\demogo\src\DemoInfo\DP\FastNetmessages\GameEvent.cs:line 80
+   at DemoInfo.DP.DemoPacketParser.ParsePacket(IBitStream bitstream, DemoParser demo) in C:\Users\Ashton\Desktop\demogo\src\DemoInfo\DP\DemoPacketParser.cs:line 41
+   at DemoInfo.DemoParser.ParseDemoPacket() in C:\Users\Ashton\Desktop\demogo\src\DemoInfo\DemoParser.cs:line 683
+   at DemoInfo.DemoParser.ParseTick() in C:\Users\Ashton\Desktop\demogo\src\DemoInfo\DemoParser.cs:line 663
+   at DemoInfo.DemoParser.ParseNextTick() in C:\Users\Ashton\Desktop\demogo\src\DemoInfo\DemoParser.cs:line 574
+   at DemoInfo.DemoParser.ParseToEnd(CancellationToken token) in C:\Users\Ashton\Desktop\demogo\src\DemoInfo\DemoParser.cs:line 554
+   at DemoGo.Parser.Parser.Parse() in C:\Users\Ashton\Desktop\demogo\src\DemoGo\Parser\Parser.cs:line 245
+   at DemoGo.Controllers.MainController.ParseDemo(String demoUrl) in C:\Users\Ashton\Desktop\demogo\src\DemoGo\Controllers\MainController.cs:line 28
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionExecutor.ExecuteAsync(MethodInfo actionMethodInfo, Object instance, Object[] orderedActionArguments)
+   at Microsoft.AspNet.Mvc.Controllers.ControllerActionInvoker.<InvokeActionAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeActionFilterAsync>d__53.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Routing.InnerAttributeRoute.<RouteAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Hosting.Internal.HostingEngine.<>c__DisplayClass32_0.<<Start>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Server.Kestrel.Http.Frame.<RequestProcessingAsync>d__79.MoveNext()
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Request finished in 4.9031ms 500
+Error: An unhandled exception was thrown by the application.
+Newtonsoft.Json.JsonSerializationException: Error getting value from 'Team1EquipmentValue' on 'DemoGo.Parser.Demo+RoundLog'. ---> System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at DemoGo.Parser.Demo.RoundPlayer.get_EquipmentValue() in C:\Users\Ashton\Desktop\demogo\src\DemoGo\Parser\Demo.cs:line 195
+   at DemoGo.Parser.Demo.RoundLog.<>c.<get_Team1EquipmentValue>b__39_1(RoundPlayer e) in C:\Users\Ashton\Desktop\demogo\src\DemoGo\Parser\Demo.cs:line 109
+   at System.Linq.Enumerable.WhereSelectEnumerableIterator`2.MoveNext()
+   at System.Linq.Enumerable.Sum(IEnumerable`1 source)
+   at DemoGo.Parser.Demo.RoundLog.get_Team1EquipmentValue() in C:\Users\Ashton\Desktop\demogo\src\DemoGo\Parser\Demo.cs:line 109
+   at GetTeam1EquipmentValue(Object )
+   at Newtonsoft.Json.Serialization.DynamicValueProvider.GetValue(Object target)
+   --- End of inner exception stack trace ---
+   at Newtonsoft.Json.Serialization.DynamicValueProvider.GetValue(Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.CalculatePropertyValues(JsonWriter writer, Object value, JsonContainerContract contract, JsonProperty member, JsonProperty property, JsonContract& memberContract, Object& memberValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeList(JsonWriter writer, IEnumerable values, JsonArrayContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeObject(JsonWriter writer, Object value, JsonObjectContract contract, JsonProperty member, JsonContainerContract collectionContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.SerializeValue(JsonWriter writer, Object value, JsonContract valueContract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerProperty)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalWriter.Serialize(JsonWriter jsonWriter, Object value, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.SerializeInternal(JsonWriter jsonWriter, Object value, Type objectType)
+   at Microsoft.AspNet.Mvc.JsonResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultAsync>d__56.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResultFilterAsync>d__55.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAllResultFiltersAsync>d__54.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeResourceFilterAsync>d__49.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNet.Mvc.Controllers.FilterActionInvoker.<InvokeAsync>d__44.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Infrastructure.MvcRouteHandler.<RouteAsync>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Mvc.Routing.InnerAttributeRoute.<RouteAsync>d__10.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Routing.RouteCollection.<RouteAsync>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Hosting.Internal.HostingEngine.<>c__DisplayClass32_0.<<Start>b__0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNet.Server.Kestrel.Http.Frame.<RequestProcessingAsync>d__79.MoveNext()
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 4.9031ms
+Information: Request finished in 4.9235ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 0.5734ms
+Information: Request finished in 0.5922ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 0.5828ms
+Information: Request finished in 0.6047ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 0.6ms
+Information: Request finished in 0.6203ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 4.0781ms
+Information: Request finished in 4.1ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/favicon.ico  
+Information: Request finished in 0.0016ms 404 
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 4.089ms
+Information: Request finished in 4.1094ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 4.0563ms
+Information: Request finished in 4.075ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 4.0343ms
+Information: Request finished in 4.0562ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 5.2734ms
+Information: Request finished in 5.275ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 5.2578ms
+Information: Request finished in 5.2765ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 4.0281ms
+Information: Request finished in 4.0515ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 4.0656ms
+Information: Request finished in 4.0828ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 9.086ms
+Information: Request finished in 9.0875ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 3.9922ms
+Information: Request finished in 4.0125ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 5.175ms
+Information: Request finished in 5.2016ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 4.0157ms
+Information: Request finished in 4.0172ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://csgodemos.blob.core.windows.net/demos/1/37652b1d2273691a411ec0787848bdfa75a91d0d861daf79dc363d28de1fefd1.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 4.1031ms
+Information: Request finished in 4.1265ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 4.775ms
+Information: Request finished in 4.7953ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/favicon.ico  
+Information: Request finished in 0.0015ms 404 
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 4.7234ms
+Information: Request finished in 4.7437ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 4.8719ms
+Information: Request finished in 4.8937ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 4.7797ms
+Information: Request finished in 4.8ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 4.7219ms
+Information: Request finished in 4.7422ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 4.7688ms
+Information: Request finished in 4.7907ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://dl.dropbox.com/s/rsz0j5fh79ryqmt/csgo.dem) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 4.7062ms
+Information: Request finished in 4.7266ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 5.2188ms
+Information: Request finished in 5.2219ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 5.0593ms
+Information: Request finished in 5.0828ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 5.1797ms
+Information: Request finished in 5.2016ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 10.95ms
+Information: Request finished in 10.95ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 5.2046ms
+Information: Request finished in 5.2062ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 10.2407ms
+Information: Request finished in 10.2422ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 5.0516ms
+Information: Request finished in 5.0719ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 5.1ms
+Information: Request finished in 5.1282ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 5.2172ms
+Information: Request finished in 5.2515ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 5.1688ms
+Information: Request finished in 5.1906ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 5.1016ms
+Information: Request finished in 5.1719ms 200 application/json; charset=utf-8
+Information: Request starting HTTP/1.1 GET http://127.0.0.1:5000/ondemand?demoUrl=https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1  
+Information: Executing action method DemoGo.Controllers.MainController.ParseDemo with arguments (https://www.dropbox.com/s/q6l6e6fmcj7eovc/match730_003116763137840250922_0744579468_125.dem?dl=1) - ModelState is Valid'
+Information: Executing JsonResult, writing value { success = True, Demo = DemoGo.Parser.Demo }.
+Information: Executed action DemoGo.Controllers.MainController.ParseDemo in 5.0797ms
+Information: Request finished in 5.1375ms 200 application/json; charset=utf-8

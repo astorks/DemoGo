@@ -55,6 +55,7 @@ namespace DemoGo.Parser
             }
         }
         public float PlayTime { get; set; }
+        public List<NotableEvent> NotableEvents { get; set; } = new List<NotableEvent>();
         [JsonIgnore]
         public List<EventLog> EventLogs { get; set; } = new List<EventLog>();
         public List<RoundLog> RoundLogs { get; set; } = new List<RoundLog>();
@@ -178,6 +179,19 @@ namespace DemoGo.Parser
             PlayerKill,
             BombPlanted,
             BombDefused,
+        }
+
+        public enum NotableEventType
+        {
+            Clutch
+        }
+
+        public class NotableEvent
+        {
+            public NotableEventType Type { get; set; }
+            public int RoundNumber { get; set; }
+            public long SteamId { get; set; }
+            public object AdditionalData { get; set; }
         }
 
         public class RoundPlayer
