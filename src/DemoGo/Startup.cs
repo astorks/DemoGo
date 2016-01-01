@@ -35,15 +35,13 @@ namespace DemoGo
             // Add framework services.
             services.AddMvc();
             services.AddSingleton<Services.DemoService>();
-            services.AddSingleton<Services.ApiAuthenticationService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, Services.DemoService demoService, Services.ApiAuthenticationService apiService)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, Services.DemoService demoService)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-            loggerFactory.AddProvider(new Logging.FileLoggerProvider());
 
             //app.UseDeveloperExceptionPage();
 
@@ -56,7 +54,6 @@ namespace DemoGo
             app.UseStaticFiles(new StaticFileOptions { ContentTypeProvider = fileProvider });
 
             demoService.Startup(1);
-            apiService.Load();
 
             Newtonsoft.Json.JsonConvert.DefaultSettings = () =>
             {
