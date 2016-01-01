@@ -1,6 +1,7 @@
 {
   "version": "1.0.0-preview1",
   "compilationOptions": {
+    "define": ["SLOW_PROTOBUF"],
     "emitEntryPoint": true
   },
 

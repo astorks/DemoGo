@@ -24,6 +24,7 @@ namespace DemoGo.Parser
         private int CurrentHalf { get; set; } = 1;
         private bool RoundMoneyFlag { get; set; }
         private bool RoundEqupmentFlag { get; set; }
+        private bool MatchStartFlag { get; set; }
 
         private Parser(Guid demoId)
         {
@@ -73,29 +74,37 @@ namespace DemoGo.Parser
             DemoParser.RoundEnd += DemoParser_RoundEnd;
             DemoParser.PlayerHurt += DemoParser_PlayerHurt;
             DemoParser.PlayerKilled += DemoParser_PlayerKilled;
+            #if SLOW_PROTOBUF
             DemoParser.ServerRankUpdate += DemoParser_ServerRankUpdate;
+            #endif
             DemoParser.BombPlanted += DemoParser_BombPlanted;
             DemoParser.BombDefused += DemoParser_BombDefused;
             DemoParser.TickDone += DemoParser_TickDone;
             DemoParser.MatchStarted += DemoParser_MatchStarted;
+            DemoParser.PlayerDisconnect += DemoParser_PlayerDisconnect;
         }
 
         #region Event Handlers
         private void DemoParser_PlayerBind(object sender, DemoInfo.PlayerBindEventArgs e)
         {
-            if (MatchStarted) return;
-
-            if (e.Player?.Team == DemoInfo.Team.CounterTerrorist)
-                Demo.Team1Players.Add(e.Player.SteamID);
-            else if (e.Player?.Team == DemoInfo.Team.Terrorist)
-                Demo.Team2Players.Add(e.Player.SteamID);
-
-            Demo.Players.Add(new Demo.GamePlayer
+            if ((e.Player?.Team == DemoInfo.Team.CounterTerrorist && Demo.Team1Ct(CurrentHalf)) || (e.Player?.Team == DemoInfo.Team.Terrorist && !Demo.Team1Ct(CurrentHalf)))
             {
-                Demo = Demo,
-                SteamId = e.Player.SteamID,
-                Name = e.Player.Name
-            });
+                if (!Demo.Team1Players.Contains(e.Player.SteamID))
+                    Demo.Team1Players.Add(e.Player.SteamID);
+            }
+            else if ((e.Player?.Team == DemoInfo.Team.Terrorist && Demo.Team1Ct(CurrentHalf)) || (e.Player?.Team == DemoInfo.Team.CounterTerrorist && !Demo.Team1Ct(CurrentHalf)))
+            {
+                if (!Demo.Team2Players.Contains(e.Player.SteamID))
+                    Demo.Team2Players.Add(e.Player.SteamID);
+            }
+
+            if(!Demo.Players.Where(p => p.SteamId == e.Player.SteamID).Any())
+                Demo.Players.Add(new Demo.GamePlayer
+                {
+                    Demo = Demo,
+                    SteamId = e.Player.SteamID,
+                    Name = e.Player.Name
+                });
         }
 
         private void DemoParser_PlayerTeam(object sender, DemoInfo.PlayerTeamEventArgs e)
@@ -111,6 +120,7 @@ namespace DemoGo.Parser
         private void DemoParser_MatchStarted(object sender, DemoInfo.MatchStartedEventArgs e)
         {
             MatchStarted = true;
+            MatchStartFlag = true;
         }
 
         private void DemoParser_RoundStart(object sender, DemoInfo.RoundStartedEventArgs e)
@@ -159,7 +169,12 @@ namespace DemoGo.Parser
 
             if (PossibleClutcher != null)
             {
-                var clutcherSide = Demo.Team2Players.Contains(PossibleClutcher.Value) && (CurrentHalf % 2 != 0) ? DemoInfo.Team.Terrorist : DemoInfo.Team.CounterTerrorist;
+                var clutcherSide = DemoInfo.Team.Spectate;
+                if(Demo.Team1Players.Contains(PossibleClutcher.Value))
+                    clutcherSide = Demo.Team1Ct(CurrentHalf) ? DemoInfo.Team.CounterTerrorist : DemoInfo.Team.Terrorist;
+                else if(Demo.Team2Players.Contains(PossibleClutcher.Value))
+                    clutcherSide = Demo.Team1Ct(CurrentHalf) ? DemoInfo.Team.Terrorist : DemoInfo.Team.CounterTerrorist;
+
                 if (e.Winner == clutcherSide)
                     Demo.NotableEvents.Add(new Demo.NotableEvent
                     {
@@ -239,6 +254,7 @@ namespace DemoGo.Parser
             });
         }
 
+        #if SLOW_PROTOBUF
         private void DemoParser_ServerRankUpdate(object sender, DemoInfo.ServerRankUpdateEventArgs e)
         {
             foreach (var rankInfo in e.RankStructList)
@@ -249,6 +265,7 @@ namespace DemoGo.Parser
                     _player.Rank = (byte)rankInfo.New;
             }
         }
+        #endif
 
         private void DemoParser_BombPlanted(object sender, DemoInfo.BombEventArgs e)
         {
@@ -278,6 +295,14 @@ namespace DemoGo.Parser
         {
             Demo.ParsingProgress = DemoParser.ParsingProgess > 1 ? 1f : DemoParser.ParsingProgess;
 
+            if(MatchStartFlag)
+            {
+                MatchStartFlag = false;
+
+                Demo.Team1Tag = DemoParser.CTClanName ?? "Counter-Terroritst";
+                Demo.Team2Tag = DemoParser.TClanName ?? "Terroritst";
+            }
+
             if (RoundMoneyFlag)
             {
                 RoundMoneyFlag = false;
@@ -302,6 +327,15 @@ namespace DemoGo.Parser
                 }
             }
         }
+
+        private void DemoParser_PlayerDisconnect(object sender, DemoInfo.PlayerDisconnectEventArgs e)
+        {
+            if (e.Player != null)
+            {
+                Team1LivingPlayers.Remove(e.Player.SteamID);
+                Team2LivingPlayers.Remove(e.Player.SteamID);
+            }
+        }
         #endregion
 
         public void Parse()
@@ -312,8 +346,6 @@ namespace DemoGo.Parser
             Demo.Host = header.ServerName;
             Demo.Tickrate = (byte)Math.Round(DemoParser.TickRate);
             Demo.ServerTickrate = (byte)(header.PlaybackTicks / header.PlaybackTime);
-            Demo.Team1Tag = DemoParser.CTClanName ?? "Counter-Terroritst";
-            Demo.Team2Tag = DemoParser.TClanName ?? "Terroritst";
 
             DemoParser.ParseToEnd();
             Demo.PlayTime = DemoParser.CurrentTime;

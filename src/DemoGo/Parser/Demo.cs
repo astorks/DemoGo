@@ -10,6 +10,24 @@ namespace DemoGo.Parser
 {
     public class Demo
     {
+        public static bool Team1Ct(int half)
+        {
+            if (half == 1)
+                return true;
+            else if (half == 2)
+                return false;
+            else if (half > 2)
+            {
+                int currentOvertime = (half == 3 ? 0 : (int)Math.Floor(((half - 3) / 2f))) + 1;
+                if (currentOvertime % 2 == 0)
+                    return half % 2 != 0;
+                else
+                    return half % 2 == 0;
+            }
+
+            return false;
+        }
+
         public Demo(Guid id)
         {
             Id = id;
@@ -29,14 +47,14 @@ namespace DemoGo.Parser
         {
             get
             {
-                return RoundLogs.Where(e => (e.Half % 2 != 0 && e.WinningSide == Team.CounterTerrorist) || (e.Half % 2 == 0 && e.WinningSide == Team.Terrorist)).Count();
+                return RoundLogs.Where(e => (Team1Ct(e.Half) && e.WinningSide == Team.CounterTerrorist) || (!Team1Ct(e.Half) && e.WinningSide == Team.Terrorist)).Count();
             }
         }
         public IEnumerable<int> Team1ScoreByHalf
         {
             get
             {
-                return RoundLogs.Where(e => (e.Half % 2 != 0 && e.WinningSide == Team.CounterTerrorist) || (e.Half % 2 == 0 && e.WinningSide == Team.Terrorist)).OrderBy(e => e.Half).GroupBy(e => e.Half).Select(e => e.Count());
+                return RoundLogs.Where(e => (Team1Ct(e.Half) && e.WinningSide == Team.CounterTerrorist) || (!Team1Ct(e.Half) && e.WinningSide == Team.Terrorist)).OrderBy(e => e.Half).GroupBy(e => e.Half).Select(e => e.Count());
             }
         }
 
@@ -44,14 +62,14 @@ namespace DemoGo.Parser
         {
             get
             {
-                return RoundLogs.Where(e => (e.Half % 2 != 0 && e.WinningSide == Team.Terrorist) || (e.Half % 2 == 0 && e.WinningSide == Team.CounterTerrorist)).Count();
+                return RoundLogs.Where(e => (Team1Ct(e.Half) && e.WinningSide == Team.Terrorist) || (!Team1Ct(e.Half) && e.WinningSide == Team.CounterTerrorist)).Count();
             }
         }
         public IEnumerable<int> Team2ScoreByHalf
         {
             get
             {
-                return RoundLogs.Where(e => (e.Half % 2 != 0 && e.WinningSide == Team.Terrorist) || (e.Half % 2 == 0 && e.WinningSide == Team.CounterTerrorist)).OrderBy(e => e.Half).GroupBy(e => e.Half).Select(e => e.Count());
+                return RoundLogs.Where(e => (Team1Ct(e.Half) && e.WinningSide == Team.Terrorist) || (!Team1Ct(e.Half) && e.WinningSide == Team.CounterTerrorist)).OrderBy(e => e.Half).GroupBy(e => e.Half).Select(e => e.Count());
             }
         }
         public float PlayTime { get; set; }
@@ -381,6 +399,9 @@ namespace DemoGo.Parser
             {
                 get
                 {
+                    if (Kills == 0 || Deaths == 0)
+                        return 0f;
+
                     return Kills / Deaths;
                 }
             }
@@ -388,6 +409,9 @@ namespace DemoGo.Parser
             {
                 get
                 {
+                    if (TotalDamageHealth + TotalDamageArmor == 0)
+                        return 0d;
+
                     return (double)(TotalDamageHealth + TotalDamageArmor) / 30f;
                 }
             }
