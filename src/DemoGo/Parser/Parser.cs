@@ -299,7 +299,7 @@ namespace DemoGo.Parser
             {
                 MatchStartFlag = false;
 
-                Demo.Team1Tag = DemoParser.CTClanName ?? "Counter-Terroritst";
+                Demo.Team1Tag = DemoParser.CTClanName ?? "Counter-Terrorist";
                 Demo.Team2Tag = DemoParser.TClanName ?? "Terroritst";
             }
 
