@@ -56,7 +56,9 @@ namespace DemoGo.Services
                     var callbackContent = new StringContent(JsonConvert.SerializeObject(callbackModel, new JsonSerializerSettings { ContractResolver = new Newtonsoft.Json.Serialization.CamelCasePropertyNamesContractResolver() }));
                     callbackContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/json");
                     var response = await httpClient.PostAsync(callbackUrl, callbackContent);
+                    var responseString = await response.Content.ReadAsStringAsync();
                     Logger.LogInformation("Callback: {0} for demo {1}", response.StatusCode, callbackModel.DemoId);
+                    Logger.LogInformation("Callback Response: {0}", responseString);
                 }
                 catch (Exception e)
                 {
