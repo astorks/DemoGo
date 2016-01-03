@@ -95,7 +95,7 @@ namespace DemoGo.Services
                     catch(Exception e)
                     {
                         Logger.LogError("Thread {0} encountered an error parsing demo {1}", Thread.CurrentThread.ManagedThreadId, demoQueue.DemoId);
-                        await PostCallback(demoQueue.CallbackUrl, new CallbackModel { Success = false, Message = e.Message, DemoId = demoQueue.DemoId });
+                        await PostCallback(demoQueue.CallbackUrl, new CallbackModel { Success = false, Message = e.ToString(), DemoId = demoQueue.DemoId });
                     }
                 }
             }
