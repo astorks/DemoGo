@@ -72,6 +72,7 @@ namespace DemoGo.Parser
             DemoParser.FreezetimeEnded += DemoParser_FreezetimeEnded;
             DemoParser.LastRoundHalf += DemoParser_LastRoundHalf;
             DemoParser.RoundEnd += DemoParser_RoundEnd;
+            DemoParser.RoundMVP += DemoParser_RoundMVP;
             DemoParser.PlayerHurt += DemoParser_PlayerHurt;
             DemoParser.PlayerKilled += DemoParser_PlayerKilled;
             #if SLOW_PROTOBUF
@@ -214,6 +215,20 @@ namespace DemoGo.Parser
                 prevRound.WinningSide = e.Winner;
                 prevRound.WinState = e.Reason.ToString();
             }
+        }
+
+        private void DemoParser_RoundMVP(object sender, DemoInfo.RoundMVPEventArgs e)
+        {
+            if (!MatchStarted) return;
+
+            Demo.EventLogs.Add(new Demo.EventPlayerMVP
+            {
+                Type = Demo.EventType.PlayerMVP,
+                SteamID = e.Player?.SteamID,
+                RoundNumber = CurrentRound,
+                GameTick = DemoParser.IngameTick,
+                Reason = e.Reason
+            });
         }
 
         private void DemoParser_PlayerHurt(object sender, DemoInfo.PlayerHurtEventArgs e)

@@ -89,6 +89,11 @@ namespace DemoGo.Parser
             return EventLogs.Where(e => e.Type == EventType.PlayerDamage).Cast<EventPlayerDamage>();
         }
 
+        public IEnumerable<EventPlayerMVP> GetPlayerMPVEvents()
+        {
+            return EventLogs.Where(e => e.Type == EventType.PlayerMVP).Cast<EventPlayerMVP>();
+        }
+
         public IEnumerable<EventBombPlant> GetBombPlantEvents()
         {
             return EventLogs.Where(e => e.Type == EventType.BombPlanted).Cast<EventBombPlant>();
@@ -179,6 +184,12 @@ namespace DemoGo.Parser
             public bool IsHeadshot { get; set; }
         }
 
+        public class EventPlayerMVP : EventLog
+        {
+            public long? SteamID { get; set; }
+            public RoundMVPReason Reason { get; set; }
+        }
+
         public class EventBombPlant : EventLog
         {
             public long? PlanterSteamId { get; set; }
@@ -197,6 +208,7 @@ namespace DemoGo.Parser
             PlayerKill,
             BombPlanted,
             BombDefused,
+            PlayerMVP,
         }
 
         public enum NotableEventType
@@ -220,6 +232,13 @@ namespace DemoGo.Parser
             public long SteamId { get; set; }
             [JsonIgnore]
             public int RoundNumber { get; set; }
+            public bool Clutched
+            {
+                get
+                {
+                    return Demo.NotableEvents.Where(e => e.Type == NotableEventType.Clutch && e.SteamId == SteamId && e.RoundNumber == RoundNumber).Any();
+                }
+            } 
             public int EquipmentValue
             {
                 get
@@ -327,6 +346,20 @@ namespace DemoGo.Parser
             public long SteamId { get; set; }
             public string Name { get; set; }
             public byte Rank { get; set; }
+            public int Clutches
+            {
+                get
+                {
+                    return Demo.NotableEvents.Where(e => e.Type == NotableEventType.Clutch && e.SteamId == SteamId).Count();
+                }
+            }
+            public int Mvps
+            {
+                get
+                {
+                    return Demo.GetPlayerMPVEvents().Where(e => e.SteamID == SteamId).Count();
+                }
+            }
             public int BombPlants
             {
                 get
