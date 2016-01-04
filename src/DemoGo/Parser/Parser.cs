@@ -87,13 +87,18 @@ namespace DemoGo.Parser
         #region Event Handlers
         private void DemoParser_PlayerBind(object sender, DemoInfo.PlayerBindEventArgs e)
         {
-            if ((e.Player?.Team == DemoInfo.Team.CounterTerrorist && Demo.Team1Ct(CurrentHalf)) || (e.Player?.Team == DemoInfo.Team.Terrorist && !Demo.Team1Ct(CurrentHalf)))
+            bool isSpectate = e.Player?.Team == DemoInfo.Team.Spectate;
+            bool isCt = e.Player?.Team == DemoInfo.Team.CounterTerrorist;
+
+            if (!isSpectate && (isCt && Demo.Team1Ct(CurrentHalf)) || (!isCt && !Demo.Team1Ct(CurrentHalf)))
             {
+                Demo.Team2Players.Remove(e.Player.SteamID);
                 if (!Demo.Team1Players.Contains(e.Player.SteamID))
                     Demo.Team1Players.Add(e.Player.SteamID);
             }
-            else if ((e.Player?.Team == DemoInfo.Team.Terrorist && Demo.Team1Ct(CurrentHalf)) || (e.Player?.Team == DemoInfo.Team.CounterTerrorist && !Demo.Team1Ct(CurrentHalf)))
+            else if (!isSpectate && (!isCt && Demo.Team1Ct(CurrentHalf)) || (isCt && !Demo.Team1Ct(CurrentHalf)))
             {
+                Demo.Team1Players.Remove(e.Player.SteamID);
                 if (!Demo.Team2Players.Contains(e.Player.SteamID))
                     Demo.Team2Players.Add(e.Player.SteamID);
             }
@@ -109,12 +114,23 @@ namespace DemoGo.Parser
 
         private void DemoParser_PlayerTeam(object sender, DemoInfo.PlayerTeamEventArgs e)
         {
-            if (MatchStarted || e.Swapped == null || e.IsBot) return;
+            if (e.Swapped == null || e.IsBot) return;
 
-            if (e.NewTeam == DemoInfo.Team.CounterTerrorist && !Demo.Team1Players.Contains(e.Swapped.SteamID))
-                Demo.Team1Players.Add(e.Swapped.SteamID);
-            else if (e.NewTeam == DemoInfo.Team.Terrorist && !Demo.Team2Players.Contains(e.Swapped.SteamID))
-                Demo.Team2Players.Add(e.Swapped.SteamID);
+            bool isSpectate = e.NewTeam == DemoInfo.Team.Spectate;
+            bool isCt = e.NewTeam == DemoInfo.Team.CounterTerrorist;
+
+            if (!isSpectate && (isCt && Demo.Team1Ct(CurrentHalf)) || (!isCt && !Demo.Team1Ct(CurrentHalf)))
+            {
+                Demo.Team2Players.Remove(e.Swapped.SteamID);
+                if (!Demo.Team1Players.Contains(e.Swapped.SteamID))
+                    Demo.Team1Players.Add(e.Swapped.SteamID);
+            }
+            else if (!isSpectate && (!isCt && Demo.Team1Ct(CurrentHalf)) || (isCt && !Demo.Team1Ct(CurrentHalf)))
+            {
+                Demo.Team1Players.Remove(e.Swapped.SteamID);
+                if (!Demo.Team2Players.Contains(e.Swapped.SteamID))
+                    Demo.Team2Players.Add(e.Swapped.SteamID);
+            }
         }
 
         private void DemoParser_MatchStarted(object sender, DemoInfo.MatchStartedEventArgs e)
