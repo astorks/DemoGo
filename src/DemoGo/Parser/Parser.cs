@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ICSharpCode.SharpZipLib.BZip2;
+using ICSharpCode.SharpZipLib.GZip;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -52,7 +54,22 @@ namespace DemoGo.Parser
                 var task = httpClient.GetStreamAsync(demoUrl);
                 task.Wait();
                 var demoStream = task.Result;
-                DemoParser = new DemoInfo.DemoParser(demoStream);
+
+                if (demoUrl.EndsWith(".bz2", StringComparison.CurrentCultureIgnoreCase))
+                {
+                    Console.WriteLine("Demo URL is bz2");
+                    DemoParser = new DemoInfo.DemoParser(new BZip2InputStream(demoStream));
+                }
+                else if (demoUrl.EndsWith(".gz", StringComparison.CurrentCultureIgnoreCase))
+                {
+                    Console.WriteLine("Demo URL is gz");
+                    DemoParser = new DemoInfo.DemoParser(new GZipInputStream(demoStream));
+                }
+                else
+                {
+                    Console.WriteLine("Demo URL is dem");
+                    DemoParser = new DemoInfo.DemoParser(demoStream);
+                }
             }
 
             SetupEvents();
