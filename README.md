@@ -10,8 +10,10 @@
 
 ### Api calls
 ##### On-demand parsing
-`/ondemand?demoUrl=https://www.dropbox.com/s/1oixsz22cq8b9hv/003124717232588849309_0984015001.dem?dl=1`
+`/ondemand?demoUrl={demoUrl}`
 ##### Scheduled parsing
-`/schedule?demoUrl=https://www.dropbox.com/s/1oixsz22cq8b9hv/003124717232588849309_0984015001.dem?dl=1&callbackUrl=http://localhost/demo-finished`
-##### Fetch completed scheduled parsing
-`/demo/00000000-0000-0000-0000-000000000000`
+`/schedule?demoUrl={demoUrl}&callbackUrl=http://localhost/demo-finished`
+##### Fetch scheduled parsing progress
+`/demo/{demoId}/progress`
+##### Fetch complete scheduled parsing
+`/demo/{demoId}`
