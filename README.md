@@ -1,7 +1,11 @@
 # DemoGo
 
 ### Requirments
-[.Net CLI](https://github.com/dotnet/cli)
+##### DNVM
+`@powershell -NoProfile -ExecutionPolicy unrestricted -Command "&{$Branch='dev';iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/aspnet/Home/dev/dnvminstall.ps1'))}"`
+
+##### DNX 1.0.0-rc1-update1
+`dnvm install 1.0.0-rc1-update1`
 
 ### Setup
 - Install DNX Core
